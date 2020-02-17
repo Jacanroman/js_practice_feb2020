@@ -25,7 +25,7 @@ function getSalePrice(originalPrice, reduction) {
   if (originalPrice === undefined) throw new Error("originalPrice is required");
   if (reduction === undefined) throw new Error("reduction is required");
   // Add your code here!
-  discount = (originalPrice*reduction)/100
+  let discount = (originalPrice*reduction)/100
   discount = discount.toPrecision(4)
   
   return originalPrice - discount
@@ -55,21 +55,47 @@ function reverseWord(word) {
 function reverseAllWords(words) {
   if (words === undefined) throw new Error("words is required");
   // Add your code here!
+  let reverse_words = []
+  for(var i=0;i<words.length;i++){
+    let a = words[i].split("").reverse().join("")
+    reverse_words.push(a);
+  }
+  return reverse_words
 }
 
 function countLinuxUsers(users) {
   if (users === undefined) throw new Error("users is required");
   // Add your code here!
+  var counter = 0;
+  for(var i=0;i<users.length;i++){
+    if(users[i].type==="Linux"){
+      counter++;
+    }
+  }
+  return counter;
 }
 
 function getMeanScore(scores) {
   if (scores === undefined) throw new Error("scores is required");
   // Add your code here!
+  var total = 0;
+  for(var i=0;i<scores.length;i++){
+    total += scores[i]
+  }
+  return Number((total / scores.length).toFixed(2))
 }
 
 function simpleFizzBuzz(n) {
   if (n === undefined) throw new Error("n is required");
-  // Add your code here!
+  if(n%3===0 && n%5===0){
+    return "fizzbuzz"
+  }else if(n%5===0){
+    return "buzz"
+  }else if(n%3===0){
+    return "fizz"
+  }else{
+    return n;
+  }
 }
 
 module.exports = {
