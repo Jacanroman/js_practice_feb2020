@@ -8,19 +8,28 @@ function capitalize(word) {
 function generateInitials(firstName, lastName) {
   if (firstName === undefined) throw new Error("firstName is required");
   if (lastName === undefined) throw new Error("lastName is required");
-  // Add your code here!
+  return firstName.charAt(0).toUpperCase()+"."+lastName.charAt(0).toUpperCase()
 }
 
 function addVAT(originalPrice, vatRate) {
   if (originalPrice === undefined) throw new Error("originalPrice is requied");
   if (vatRate === undefined) throw new Error("vatRate is required");
-  // Add your code here!
+  
+  let vat = (originalPrice * vatRate)/100
+  
+  let result = originalPrice + vat
+  return Number(result.toFixed(2))
 }
 
 function getSalePrice(originalPrice, reduction) {
   if (originalPrice === undefined) throw new Error("originalPrice is required");
   if (reduction === undefined) throw new Error("reduction is required");
   // Add your code here!
+  discount = (originalPrice*reduction)/100
+  discount = discount.toPrecision(4)
+  
+  return originalPrice - discount
+
 }
 
 function getMiddleCharacter(str) {
