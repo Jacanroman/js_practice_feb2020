@@ -1,7 +1,7 @@
 function getFillings(sandwich) {
   if (sandwich === undefined) throw new Error("ingredients is required");
   // Your code here!
-    return sandwich.fillings
+    return sandwich.fillings;
 
 }
 
@@ -21,7 +21,7 @@ function getBusNumbers(people) {
 
 function countSheep(arr) {
   if (arr === undefined) throw new Error("arr is required");
-  sheepy =0
+  let sheepy =0;
   
   /*
   for (let i=0;i<arr.length;i++){
@@ -43,13 +43,12 @@ function countSheep(arr) {
 function hasMPostCode(person) {
   if (person === undefined) throw new Error("person is required");
   // Your code here!ç
-  for (let k in person){
     if (person.address.postCode.charAt(0).toUpperCase()==="M" && person.address.city.toUpperCase()=== "MANCHESTER"){
       return true;
     }else{
       return false;
     }
-  }
+  
 }
 
 module.exports = {
