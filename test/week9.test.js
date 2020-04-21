@@ -18,7 +18,7 @@ describe("sumMultiples  ", ()=>{
 
        expect(()=>{
         sumMultiples(4);
-    }).toThrow("an Array is required")
+        }).toThrow("an Array is required")
     })
 
     
