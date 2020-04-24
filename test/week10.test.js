@@ -160,7 +160,7 @@ describe("This function should transform the hex code into an RGB code in the fo
 
 });
 
-describe("This function takes a noughts and crosses board represented as an array, where an empty space is represented with null",()=>{
+describe.only("This function takes a noughts and crosses board represented as an array, where an empty space is represented with null",()=>{
     
     test("It throws an error if not passed an argument",()=>{
         expect(()=>{
