@@ -10,7 +10,8 @@ All functions have been developed with full TDD using the Jest [Jest](https://je
 
 First, clone this repository and install dependencies:
 
-npm install
+  npm install
+  
 To run the test suite:
 
 npm test
