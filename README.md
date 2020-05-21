@@ -1,12 +1,12 @@
 # JavaScript & Sugar.js Practice
 
-# JavaScript
+## JavaScript
 This repository contains a number of problems solved using JavaScript.
 
-All functions have been developed with full TDD using the Jest testing library.
+All functions have been developed with full TDD using the Jest [Jest](https://jestjs.io) testing library.
 
-Running the tests
-Node.js must be installed if not already.
+### Running the tests
+[Node.js](https://nodejs.org/en/) must be installed if not already.
 
 First, clone this repository and install dependencies:
 
