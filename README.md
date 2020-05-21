@@ -10,31 +10,31 @@ All functions have been developed with full TDD using the Jest [Jest](https://je
 
 First, clone this repository and install dependencies:
 
-  npm install
-  
+    npm install
+
 To run the test suite:
 
-npm test
+    npm test
 
-# Sugar.js
-Sugar.js is a JavaScript utility library for working with native objects. It allows, amongst other things, extension of the Object object with additional helpful methods.
+## Sugar.js
+[Sugar.js](https://sugarjs.com/) is a JavaScript utility library for working with native objects. It allows, amongst other things, extension of the Object object with additional helpful methods.
 
 This projects replicates some of the functionality of Sugar.js.
 
 It has been developed with full TDD.
 
-# API
+### API
 This project implements the following methods:
 
-Object.size
-Object.min
-Object.max
-Object.clone
-Object.get
-Object.has
-Object.sum
-Object.invert
-Object.addAll
-Object.find
-Object.every
-Object.some
+- [`Object.size`](https://sugarjs.com/docs/#/Object/size)
+- [`Object.min`](https://sugarjs.com/docs/#/Object/min)
+- [`Object.max`](https://sugarjs.com/docs/#/Object/max)
+- [`Object.clone`](https://sugarjs.com/docs/#/Object/clone)
+- [`Object.get`](https://sugarjs.com/docs/#/Object/get)
+- [`Object.has`](https://sugarjs.com/docs/#/Object/has)
+- [`Object.sum`](https://sugarjs.com/docs/#/Object/sum)
+- [`Object.invert`](https://sugarjs.com/docs/#/Object/invery)
+- [`Object.addAll`](https://sugarjs.com/docs/#/Object/addAll)
+- [`Object.find`](https://sugarjs.com/docs/#/Object/find)
+- [`Object.every`](https://sugarjs.com/docs/#/Object/every)
+- [`Object.some`](https://sugarjs.com/docs/#/Object/some)
